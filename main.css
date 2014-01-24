@@ -1,0 +1,63 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ 
+}
+
+.quote-box{
+  width: 80%;
+  background: #bbb;
+  padding:5px;
+  margin: 12px auto;
+  text-align: right;
+}
+.quote-text{
+  text-align:center;
+  margin:0;
+}
+.quote-author, .quote-rating{
+  display: inline-block;
+  padding: 4px 8px;
+}
+
+.quote-rating{
+
+  margin-right: 24px;
+}
+
+.button{
+  width:70%;
+  padding:5px;
+  margin: 12px auto;
+  background: red;
+  color:#fff; 
+  text-align: center;
+}
+.editArea{
+  /*display: none;*/
+  width: 70%;
+  text-align: center;
+  padding:5px;
+  margin: 12px auto;
+}
+
+.input-item{
+  width:100%;
+  margin: 10px auto;
+  /*vertical-align: top;*/
+
+}
+.itemName{
+  max-width: 30%;
+  text-align: right;
+  vertical-align: top;
+  /*border: 1px solid #000;*/
+  display: inline-block;
+}
+.input-area{
+  display: inline-block;
+  width:69%;
+  padding: 0;
+  margin: 0;
+}
