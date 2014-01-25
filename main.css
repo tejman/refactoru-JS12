@@ -13,9 +13,10 @@
   text-align: right;
 }
 .quote-text{
-  text-align:center;
+  text-align:left;
+  font-style: italic;
   margin:0;
-  padding: 2px 10px;
+  padding: 5px 25px;
 }
 .quote-author, .quote-rating{
   display: inline-block;
@@ -23,7 +24,7 @@
 }
 
 .quote-rating{
-
+  vertical-align: top;
   margin-right: 24px;
 }
 
@@ -85,4 +86,20 @@
 
 .light-box{
   margin-top: 200px;
+}
+
+.rating-input {
+  resize: none;
+  vertical-align: middle;
+}
+
+.delete {
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  background-color: rgba(200, 0, 0, .7);
+  text-decoration: none;
+  padding: 2px;
+  color: white;
 }
