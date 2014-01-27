@@ -15,6 +15,9 @@ $(document).ready(function() {
     newQuoteBox.find(".quote-text").text(newQuoteText);
     newQuoteBox.find(".quote-author").text(newQuoteAuthor);
 
+    newQuoteBox.attr("data-rating", "0");
+    newQuoteBox.attr("data-votes", "0");
+    newQuoteBox.find(".rating").text("None");
     lastQuote.after(newQuoteBox);
   };
 
@@ -95,8 +98,14 @@ var confirmDelete = function(elem) {
   undoElem.text("Undo?");
   undoElem.css("backgroundColor", "#0B0");
   undoElem.addClass("undo");
+  undoElem.removeClass("delete");
   elem.addClass("confirm");
   elem.after(undoElem);
+};
+
+var undoDelete = function(elem) {
+  elem.siblings(".confirm").text("Delete").addClass("delete").removeClass("confirm");
+  $(elem).remove();
 };
 
   
@@ -163,7 +172,8 @@ var confirmDelete = function(elem) {
   });
 
   $(document).on("click", ".undo", function(){
-
+    console.log($(this));
+    undoDelete($(this));
 
   });
 

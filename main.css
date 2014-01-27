@@ -93,7 +93,7 @@
   vertical-align: middle;
 }
 
-.delete {
+.delete, .undo {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
